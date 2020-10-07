@@ -103,3 +103,8 @@ footer h5{
 .description p{
     text-align: justify;
 }
+
+.findme-list a:hover{
+    color: red;
+    font-weight: bold;
+}
