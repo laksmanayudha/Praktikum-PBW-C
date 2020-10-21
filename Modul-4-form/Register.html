@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+    
+    <div class="navBar">
+        <div class="logo">
+            <img src="assets/img/google.png" alt="">
+        </div>
+        <div class="navBar-items">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="Login.html">login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="loginContainer">
+            <h2>register</h2>
+            <form action="#">
+                <label for="username">username : </label> <br>
+                <input type="text" id="username" name="username"> <br><br>
+                <label for="email">e-mail : </label> <br>
+                <input type="email" id="email" name="email"> <br><br>
+                <label for="password">password : </label> <br>
+                <input type="password" id="password" name="password"><br><br>
+                <label for="konfirmasi">Konfirmasi password : </label> <br>
+                <input type="password" id="konfirmasi" name="konfirmasi"><br><br>
+
+                <label for="">Jenis Kelamin : </label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="">Hobi : </label><br>
+                <input type="checkbox" id="hobi1" name="hobi1" value="sepeda">
+                <label for="hobi1">Bersepeda</label><br>
+                <input type="checkbox" id="hobi2" name="hobi2" value="catur">
+                <label for="hobi2">Bermain Catur</label><br>
+                <input type="checkbox" id="hobi3" name="hobi3" value="musik">
+                <label for="hobi3">Bermusik</label><br>
+                <input type="checkbox" id="hobi4" name="hobi4" value="belajar">
+                <label for="hobi4">Belajar</label><br><br>
+
+                <label for="Agama">Pilih Agama : </label>
+
+                <select name="Agama" id="Agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Khonghucu">Khonghucu</option>
+
+                </select><br><br>
+
+                <label for="desc">Deskripsi diri : </label><br>
+                <textarea name="desc" id="" cols="50" rows="10">Aku adalah seorang...
+                </textarea><br><br>
+
+                <label for="id">Foto : </label>
+                <input type="file" name="foto" id="foto"><br><br>
+
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <h5 >Copyright &copy; 2020 by YudhaL</h5>
+    </div>
+    
+</body>
+</html>
