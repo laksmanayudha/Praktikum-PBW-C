@@ -1,5 +1,6 @@
 <?php 
 
+
 function cek_input($nilai){
     return ($nilai != "" && is_numeric($nilai)) ? $nilai : 0;
 }
