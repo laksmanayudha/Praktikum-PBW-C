@@ -38,6 +38,7 @@ if( isset($_POST['login']) ){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -50,7 +51,7 @@ if( isset($_POST['login']) ){
         <?php endif; ?>
 
 
-        <h2>login</h2>
+        <h2>LOGIN</h2>
 
         <form action="./login.php" method="POST">
         
@@ -59,7 +60,7 @@ if( isset($_POST['login']) ){
             <label for="pass">Passowrd : </label><br>
             <input type="password" id="pass" name="pass" required><br><br>
 
-            <button name="login">Login</button>
+            <button name="login" class="mybtn green">Login</button>
         </form>
     
     </div>

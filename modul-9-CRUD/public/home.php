@@ -25,23 +25,24 @@ $mahasiswa = getAllMahasiswa();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
     <h1>Halo, <?php echo $user['role'] . " " . $user["username"]; ?> Selamat Datang !</h1>
     <div class="container">
-        <div class="tambah"><a href="./CRUD/create.php">tambah data</a></div>
+        <div class="tambah"><a href="./CRUD/create.php" class="mybtn green">tambah data</a></div>
 
         <?php if( count($mahasiswa) > 0 )  : ?>
             <table border="1" cellpadding="10">
                 <tr>
-                    <td>no.</td>
+                    <th>no.</th>
                     <?php foreach(array_keys($mahasiswa[0]) as $key) : ?>
                         <?php if($key != 'id') :  ?>
-                            <td><?php echo $key; ?></td>
+                            <th><?php echo $key; ?></th>
                         <?php endif; ?>
                     <?php endforeach; ?>
-                    <td>aksi</td>
+                    <th>aksi</th>
                 </tr>
                 
                 <!-- data -->
@@ -53,9 +54,9 @@ $mahasiswa = getAllMahasiswa();
                         <td><?php echo $m['nama']; ?></td>
                         <td><?php echo $m['alamat']; ?></td>
                         <td>
-                            <a href="./CRUD/edit.php?id=<?php echo $m['id']; ?>">edit</a>
+                            <a href="./CRUD/edit.php?id=<?php echo $m['id']; ?>" class=" blue mybtn ">edit</a>
                             <?php if($user['role'] == 'admin') : ?>
-                                <a href="./CRUD/delete.php?id=<?php echo $m['id']; ?>">| hapus</a>
+                               | <a href="./CRUD/delete.php?id=<?php echo $m['id']; ?>" class=" red mybtn "> hapus</a>
                             <?php endif; ?>
                         </td>
                     </tr>
@@ -64,7 +65,7 @@ $mahasiswa = getAllMahasiswa();
             </table>
         <?php endif; ?>
     
-        <div class="logout"><a href="logout.php">Logout</a></div>
+        <div class="logout"><a href="logout.php" class="mybtn green">Logout</a></div>
     </div>
 
     

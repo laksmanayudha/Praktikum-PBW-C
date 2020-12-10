@@ -52,6 +52,7 @@ if( isset($_POST['ubah']) ){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubah Mahasiswa</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -74,10 +75,11 @@ if( isset($_POST['ubah']) ){
             <label for="alamat">Alamat : </label>
             <input type="text" name="alamat" id="alamat" value="<?php echo $mahasiswa['alamat']; ?>" ><br><br>
             
-            <button name="ubah" >Ubah</button>
+            <button name="ubah"class="mybtn green" >Ubah</button>
         </form>
-
-        <a href="../home.php">kembali</a>
+        
+        <br>
+        <a href="../home.php" class="mybtn blue">kembali</a>
     
     </div>
     

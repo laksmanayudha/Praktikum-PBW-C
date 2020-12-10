@@ -47,6 +47,7 @@ if( isset($_POST['tambah']) ){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Mahasiswa</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -66,10 +67,11 @@ if( isset($_POST['tambah']) ){
             <label for="alamat">Alamat : </label>
             <input type="text" name="alamat" id="alamat"><br><br>
             
-            <button name="tambah" >Tambah</button>
+            <button name="tambah" class="mybtn green">Tambah</button>
         </form>
-
-        <a href="../home.php">kembali</a>
+        
+        <br>
+        <a href="../home.php"  class="mybtn blue">kembali</a>
     
     </div>
     
